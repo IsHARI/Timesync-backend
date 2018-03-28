@@ -1,4 +1,4 @@
-package net.ishari.timesync.app;
+package net.ishari.timesync;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
