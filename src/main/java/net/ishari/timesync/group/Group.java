@@ -1,4 +1,7 @@
-package net.ishari.timesync.entity;
+package net.ishari.timesync.group;
+
+import net.ishari.timesync.activity.Activity;
+import net.ishari.timesync.user.User;
 
 import javax.persistence.*;
 import java.util.ArrayList;

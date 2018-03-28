@@ -1,4 +1,4 @@
-package net.ishari.timesync.entity;
+package net.ishari.timesync.timeslot;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

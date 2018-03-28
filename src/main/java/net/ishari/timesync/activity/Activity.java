@@ -1,4 +1,6 @@
-package net.ishari.timesync.entity;
+package net.ishari.timesync.activity;
+
+import net.ishari.timesync.timetable.Timetable;
 
 import javax.persistence.*;
 import java.util.List;
