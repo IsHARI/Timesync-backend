@@ -11,6 +11,7 @@ public class User {
     @GeneratedValue
     private Long id;
     private String username;
+    @Column(unique = true)
     private String email;
     @ManyToMany(mappedBy = "users")
     private List<Group> groups = new ArrayList<>();
