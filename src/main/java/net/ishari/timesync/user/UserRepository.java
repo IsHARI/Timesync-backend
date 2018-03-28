@@ -1,7 +1,7 @@
-package net.ishari.timesync.repository;
+package net.ishari.timesync.user;
 
-import net.ishari.timesync.entity.User;
 import org.springframework.data.repository.CrudRepository;
 
 public interface UserRepository extends CrudRepository<User, Long> {
+    User findByUsername(String username);
 }

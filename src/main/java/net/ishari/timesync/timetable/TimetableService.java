@@ -1,7 +1,6 @@
-package net.ishari.timesync.service;
+package net.ishari.timesync.timetable;
 
-import net.ishari.timesync.entity.TimeSlot;
-import net.ishari.timesync.entity.Timetable;
+import net.ishari.timesync.timeslot.TimeSlot;
 import org.springframework.stereotype.Component;
 
 import java.time.Instant;
