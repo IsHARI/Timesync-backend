@@ -1,4 +1,4 @@
-# Timesync-backend
+# timesync
 A tool to help organize group activities across timezones.
 
 Created as the final project for the Coders Lab coding bootcamp. It uses Spring Boot to provide a RESTful API representing users, groups, and their activities, secured with a JWT-based Spring Security setup. The frontend can be found [here](https://github.com/IsHARI/timesync-frontend).
