@@ -1,5 +1,6 @@
 package net.ishari.timesync.timetable;
 
+import net.ishari.timesync.activity.Activity;
 import net.ishari.timesync.timeslot.TimeSlot;
 import net.ishari.timesync.user.User;
 
@@ -15,8 +16,8 @@ public class Timetable {
     private Long id;
     @ManyToOne
     private User user;
-    @OneToMany
-    private List<TimeSlot> timeSlots = new ArrayList<>();
+    @ManyToOne
+    private Activity activity;
     private Period period;
 
     public Timetable() {
@@ -33,11 +34,11 @@ public class Timetable {
     public void setPeriod(Period period) {
         this.period = period;
     }
-    public List<TimeSlot> getTimeSlots() {
-        return timeSlots;
+    public Activity getActivity() {
+        return activity;
     }
-    public void setTimeSlots(List<TimeSlot> timeSlots) {
-        this.timeSlots = timeSlots;
+    public void setActivity(Activity activity) {
+        this.activity = activity;
     }
     public User getUser() {
         return user;
