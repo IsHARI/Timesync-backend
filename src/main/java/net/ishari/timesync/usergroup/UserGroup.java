@@ -1,4 +1,4 @@
-package net.ishari.timesync.group;
+package net.ishari.timesync.usergroup;
 
 import net.ishari.timesync.user.User;
 
@@ -9,8 +9,8 @@ import javax.persistence.ManyToMany;
 import java.util.ArrayList;
 import java.util.List;
 
-@Entity
-public class Group {
+@Entity // TODO figure out why no table is created
+public class UserGroup {
     @Id
     @GeneratedValue
     private Long id;

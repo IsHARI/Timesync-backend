@@ -1,10 +1,8 @@
 package net.ishari.timesync.user;
 
-import net.ishari.timesync.group.Group;
-import net.ishari.timesync.timetable.Timetable;
+import net.ishari.timesync.usergroup.UserGroup;
 
 import javax.persistence.*;
-import java.time.ZoneId;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,6 +16,8 @@ public class User {
     private String password;
     @Column(unique = true)
     private String email;
+    @ManyToMany(mappedBy = "users")
+    private List<UserGroup> userGroups = new ArrayList<>();
 
     public Long getId() {
         return id;
