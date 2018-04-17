@@ -12,18 +12,8 @@ public class Activity {
     private Long id;
     private String name;
     private String description;
-    @OneToMany
-    private List<Timetable> userTimetables;
     @OneToOne
-    private Timetable timetable;
-
-    public List<Timetable> getUserTimetables() {
-        return userTimetables;
-    }
-
-    public void setUserTimetables(List<Timetable> userTimetables) {
-        this.userTimetables = userTimetables;
-    }
+    private Timetable mainTimetable;
 
     public Long getId() {
         return id;
@@ -49,11 +39,11 @@ public class Activity {
         this.description = description;
     }
 
-    public Timetable getTimetable() {
-        return timetable;
+    public Timetable getMainTimetable() {
+        return mainTimetable;
     }
 
-    public void setTimetable(Timetable timetable) {
-        this.timetable = timetable;
+    public void setMainTimetable(Timetable mainTimetable) {
+        this.mainTimetable = mainTimetable;
     }
 }

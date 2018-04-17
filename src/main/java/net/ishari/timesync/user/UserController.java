@@ -18,8 +18,6 @@ public class UserController {
     @PostMapping("/sign-up")
     public void signUp(@RequestBody User user) {
         user.setPassword(bCryptPasswordEncoder.encode(user.getPassword()));
-        Timetable timetable = new Timetable(user, Period.ofWeeks(1));
-        user.setTemplateTimetable(timetable);
         userRepository.save(user);
     }
 

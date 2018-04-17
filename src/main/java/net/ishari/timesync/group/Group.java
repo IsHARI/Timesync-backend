@@ -1,9 +1,11 @@
 package net.ishari.timesync.group;
 
-import net.ishari.timesync.activity.Activity;
 import net.ishari.timesync.user.User;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.ManyToMany;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,16 +19,6 @@ public class Group {
     private List<User> users = new ArrayList<>();
     @ManyToMany
     private List<User> admins = new ArrayList<>();
-    @OneToMany
-    private List<Activity> activities = new ArrayList<>();
-
-    public List<Activity> getActivities() {
-        return activities;
-    }
-
-    public void setActivities(List<Activity> activities) {
-        this.activities = activities;
-    }
 
     public List<User> getAdmins() {
         return admins;
