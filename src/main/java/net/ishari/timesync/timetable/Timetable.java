@@ -1,13 +1,13 @@
 package net.ishari.timesync.timetable;
 
 import net.ishari.timesync.activity.Activity;
-import net.ishari.timesync.timeslot.TimeSlot;
 import net.ishari.timesync.user.User;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import java.time.Period;
-import java.util.ArrayList;
-import java.util.List;
 
 @Entity
 public class Timetable {

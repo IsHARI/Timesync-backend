@@ -9,3 +9,7 @@ Created as the final project for the Coders Lab coding bootcamp. It uses Spring 
 4. Modify the database url, username, and password in src/main/resources/application.properties
 5. Build with Maven
 6. Run the resulting .jar
+
+## To do:
+1. Add validation
+2. Improve security
